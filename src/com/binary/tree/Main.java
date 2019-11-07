@@ -1,5 +1,6 @@
 package com.binary.tree;
 
+import com.binary.tree.core.HeightOfBinaryTree;
 import com.binary.tree.tests.TestInOrder;
 import com.binary.tree.tests.TestPostOrder;
 import com.binary.tree.tests.TestPreOrder;
@@ -62,5 +63,9 @@ public class Main {
         System.out.println("\n==== Diagonal View Of Binary Tree ====");
         DiagonalView diagonalView = new DiagonalView();
         diagonalView.printDiagonalView();
+
+        System.out.println("\n==== Height Of Binary Tree ====");
+        HeightOfBinaryTree heightOfBinaryTree = new HeightOfBinaryTree();
+        heightOfBinaryTree.getHeight();
     }
 }
