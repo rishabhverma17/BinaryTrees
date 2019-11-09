@@ -1,6 +1,7 @@
 package com.binary.tree;
 
 import com.binary.tree.core.HeightOfBinaryTree;
+import com.binary.tree.core.PrintAllPath;
 import com.binary.tree.tests.TestInOrder;
 import com.binary.tree.tests.TestPostOrder;
 import com.binary.tree.tests.TestPreOrder;
@@ -9,6 +10,9 @@ import com.binary.tree.traversal.LevelOrderTraversal;
 import com.binary.tree.traversal.SpiralOrderTraversal;
 import com.binary.tree.traversal.VerticalOrderTraversal;
 import com.binary.tree.views.*;
+
+import java.lang.reflect.Array;
+import java.util.ArrayList;
 
 public class Main {
 
@@ -67,5 +71,12 @@ public class Main {
         System.out.println("\n==== Height Of Binary Tree ====");
         HeightOfBinaryTree heightOfBinaryTree = new HeightOfBinaryTree();
         heightOfBinaryTree.getHeight();
+
+        System.out.println("\n==== Print All Path Of Binary Tree ====");
+        PrintAllPath printAllPath = new PrintAllPath();
+        ArrayList<ArrayList<Integer>> allPathBinaryTree = printAllPath.solve();
+        for(ArrayList list : allPathBinaryTree){
+            System.out.println(list);
+        }
     }
 }
