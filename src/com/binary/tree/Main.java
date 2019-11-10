@@ -1,5 +1,6 @@
 package com.binary.tree;
 
+import com.binary.tree.core.CountNodes;
 import com.binary.tree.core.HeightOfBinaryTree;
 import com.binary.tree.core.PrintAllPath;
 import com.binary.tree.tests.TestInOrder;
@@ -78,5 +79,9 @@ public class Main {
         for(ArrayList list : allPathBinaryTree){
             System.out.println(list);
         }
+
+        System.out.println("\n==== Count of Nodes in Binary Tree ====");
+        CountNodes countNodes = new CountNodes();
+        countNodes.countNodesInBinaryTree();
     }
 }
